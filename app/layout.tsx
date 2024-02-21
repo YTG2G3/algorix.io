@@ -1,3 +1,4 @@
+import RootProvider from '@/components/utils/root-provider';
 import { inter, suit } from '@/lib/fonts';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${suit.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <RootProvider>{children}</RootProvider>
+      </body>
     </html>
   );
 }
