@@ -2,6 +2,7 @@ import RootProvider from '@/components/utils/root-provider';
 import { inter, suit } from '@/lib/fonts';
 import type { Metadata } from 'next';
 import './globals.css';
+import Nav from './nav';
 
 export const metadata: Metadata = {
   title: 'Algorix LLC',
@@ -16,7 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${suit.variable}`}>
       <body className="font-sans">
-        <RootProvider>{children}</RootProvider>
+        <RootProvider>
+          <Nav />
+
+          {children}
+        </RootProvider>
       </body>
     </html>
   );
