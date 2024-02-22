@@ -19,7 +19,7 @@ import Image from 'next/image';
 export default function Nav() {
   return (
     <nav
-      className="grid w-screen bg-white bg-opacity-80 px-7 py-4"
+      className="grid w-screen bg-white bg-opacity-80 px-7 py-4 fixed z-20"
       style={{ gridTemplateColumns: '1fr 1fr 1fr' }}
     >
       <Link href="/">
