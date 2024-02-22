@@ -13,7 +13,7 @@ export default function Error({
     <div className="flex h-full w-full items-center justify-center">
       <div className="flex flex-col items-center gap-4">
         <span
-          className={`font-grotesque text-9xl font-black opacity-40 select-none`}
+          className={`font-wanted text-9xl font-black opacity-40 select-none`}
         >
           Error
         </span>

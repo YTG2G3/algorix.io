@@ -18,3 +18,8 @@ export const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   variable: '--font-bricolage'
 });
+
+export const wanted = localFont({
+  src: './WantedSansVariable.woff2',
+  variable: '--font-wanted'
+});

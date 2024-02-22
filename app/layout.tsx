@@ -1,6 +1,7 @@
 import RootProvider from '@/components/utils/root-provider';
 import { inter, suit } from '@/lib/fonts';
 import type { Metadata } from 'next';
+import Footer from './footer';
 import './globals.css';
 import Nav from './nav';
 
@@ -21,6 +22,8 @@ export default function RootLayout({
           <Nav />
 
           {children}
+
+          <Footer />
         </RootProvider>
       </body>
     </html>

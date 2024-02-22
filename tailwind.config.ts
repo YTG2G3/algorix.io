@@ -74,7 +74,9 @@ const config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
-        suit: ['var(--font-suit)']
+        suit: ['var(--font-suit)'],
+        wanted: ['var(--font-wanted)'],
+        grotesque: ['var(--font-bricolage)']
       }
     }
   },
