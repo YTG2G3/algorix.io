@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${suit.variable}`}>
-      <body className="font-sans">
+      <body className="font-sans h-screen w-screen overflow-x-hidden overflow-y-auto">
         <RootProvider>
           <Nav />
 
