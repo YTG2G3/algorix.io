@@ -1,13 +1,9 @@
-import { Bricolage_Grotesque, Inter } from 'next/font/google';
+import { Bricolage_Grotesque } from 'next/font/google';
 import localFont from 'next/font/local';
 
-// Inter is default font, SUIT is for emphasis
-// Use `font-sans` and `font-suit` in Tailwind CSS (see tailwind.config.ts)
-
-export const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter'
-});
+// Wanted is default font, Bricolage is for emphasis
+// Use `font-sans` and `font-bricolage` in Tailwind CSS (see tailwind.config.ts)
+// Suit is for the logo
 
 export const suit = localFont({
   src: './SUIT-Variable.woff2',

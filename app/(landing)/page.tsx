@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function Landing() {
   return (
     <div className="flex items-center text-center flex-col justify-around h-screen w-screen">
-      <span className="font-grotesque text-9xl font-bold">
+      <span className="px-8 font-bricolage text-9xl font-semibold">
         Trust Your Uniqueness
       </span>
 
@@ -44,9 +44,13 @@ export default function Landing() {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <span className="font-suit">
+      <span className="font-suit text-lg">
         <span className="font-black">algorix </span>
         <span>corporation</span>
+        <br />
+        <span className="font-sans text-muted-foreground text-xs">
+          447 Broadway, 2F #1159, New York, New York 10013, United States
+        </span>
       </span>
     </div>
   );

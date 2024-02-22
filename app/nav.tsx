@@ -24,7 +24,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="grid w-screen bg-opacity-80 px-7 py-4 fixed z-20"
+      className={`grid w-screen bg-opacity-80 px-7 py-4 z-30 ${pathname === 'about' ? 'fixed' : ''}`}
       style={{
         gridTemplateColumns: '1fr 1fr',
         background: 'hsl(var(--background))'
@@ -67,7 +67,7 @@ export default function Nav() {
           </NavigationMenuItem>
         </NavigationMenuList>
 
-        <div className="absolute top-full flex justify-center">
+        <div className={`absolute top-full flex justify-center`}>
           <NavigationMenuViewport className="origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]" />
         </div>
       </NavigationMenu>

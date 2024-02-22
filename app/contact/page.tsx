@@ -10,6 +10,7 @@ import {
   FormMessage
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CheckCircledIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
@@ -54,9 +55,9 @@ export default function Contact() {
         <span className="text-sm text-muted-foreground select-none">
           <Card className="w-96">
             {submitted ? (
-              <CardContent className="flex my-6 mx-4 !pb-0 justify-center items-center">
-                <CheckCircledIcon />
-                <CardDescription>
+              <CardContent className="flex flex-col my-6 gap-4 mx-2 !pb-0 justify-center items-center">
+                <CheckCircledIcon height={40} width={40} />
+                <CardDescription className="text-center">
                   Your message has been sent.
                   <br />
                   We will be in touch as soon as possible.
@@ -64,7 +65,7 @@ export default function Contact() {
               </CardContent>
             ) : (
               <>
-                <CardContent className="my-6 mx-4 !pb-0">
+                <CardContent className="my-6 mx-2 !pb-0">
                   <CardDescription className="mb-4">
                     Get in contact with us.
                   </CardDescription>
@@ -120,18 +121,24 @@ export default function Contact() {
                       />
                       <FormField
                         control={form.control}
-                        name="name"
+                        name="message"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Name</FormLabel>
+                            <FormLabel>Message</FormLabel>
                             <FormControl>
-                              <Input placeholder="Henry Kwon" {...field} />
+                              <Textarea
+                                className="resize-none h-32"
+                                placeholder="Tell us about the details..."
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
                         )}
                       />
-                      <Button type="submit">Submit</Button>
+                      <div className="flex items-center justify-end">
+                        <Button type="submit">Submit</Button>
+                      </div>
                     </form>
                   </Form>
                 </CardContent>

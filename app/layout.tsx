@@ -1,5 +1,6 @@
+import { Toaster } from '@/components/ui/sonner';
 import RootProvider from '@/components/utils/root-provider';
-import { inter, suit } from '@/lib/fonts';
+import { bricolage, wanted } from '@/lib/fonts';
 import type { Metadata } from 'next';
 import Footer from './footer';
 import './globals.css';
@@ -16,10 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${suit.variable}`}>
+    <html lang="en" className={`${wanted.variable} ${bricolage.variable}`}>
       <body className="font-sans h-screen w-screen overflow-x-hidden overflow-y-auto">
         <RootProvider>
           <Nav />
+          <Toaster />
 
           {children}
 

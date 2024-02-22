@@ -73,10 +73,10 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out'
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-wanted)'],
         suit: ['var(--font-suit)'],
         wanted: ['var(--font-wanted)'],
-        grotesque: ['var(--font-bricolage)']
+        bricolage: ['var(--font-bricolage)']
       }
     }
   },
