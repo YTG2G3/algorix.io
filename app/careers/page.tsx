@@ -138,7 +138,7 @@ export default function Careers() {
               position.skills.filter(
                 (v) => enabled[skills.findIndex((vv) => vv === v)]
               ).length > 0 ? (
-                <Card key={i} className="w-96">
+                <Card key={i} className="w-96 relative pb-16">
                   <CardHeader>
                     <CardTitle>{position.title}</CardTitle>
                     <CardDescription>
@@ -156,7 +156,7 @@ export default function Careers() {
                       ))}
                     </ul>
                   </CardContent>
-                  <CardFooter className="flex justify-end items-center">
+                  <CardFooter className="flex justify-end items-center absolute bottom-0 right-0">
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button>Apply now!</Button>

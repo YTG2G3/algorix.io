@@ -24,7 +24,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`grid w-screen bg-opacity-80 px-7 py-4 z-30 ${pathname === 'about' ? 'fixed' : ''}`}
+      className={`grid w-screen bg-opacity-80 px-7 py-4 z-30 fixed`}
       style={{
         gridTemplateColumns: '1fr 1fr',
         background: 'hsl(var(--background))'
