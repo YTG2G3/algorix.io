@@ -43,9 +43,9 @@ export default function Nav() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link href="/jobs" legacyBehavior passHref>
+            <Link href="/careers" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Jobs
+                Careers
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
