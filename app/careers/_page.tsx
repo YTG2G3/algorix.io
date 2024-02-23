@@ -166,12 +166,12 @@ export default function ClientCareers({ submit }: { submit: (data) => void }) {
             ))}
           </div>
 
-          <div className="flex gap-4 w-full px-20 flex-wrap justify-center relative pb-16">
+          <div className="flex gap-4 w-full px-20 flex-wrap justify-center">
             {positions.map((position, i) =>
               position.skills.filter(
                 (v) => enabled[skills.findIndex((vv) => vv === v)]
               ).length > 0 ? (
-                <Card key={i} className="w-96">
+                <Card key={i} className="w-96 relative pb-16">
                   <CardHeader>
                     <CardTitle>{position.title}</CardTitle>
                     <CardDescription>
