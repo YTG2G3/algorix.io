@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="w-screen flex justify-center mt-2">
+    <div className="w-screen flex justify-center mt-2 px-6">
       <div className="flex flex-col gap-8 max-w-2xl leading-7">
         <div>
           <h1 className="font-bricolage text-4xl font-bold mb-2">
