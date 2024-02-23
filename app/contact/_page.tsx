@@ -55,7 +55,7 @@ export default function ClientContact({
           Contact Us
         </span>
         <span className="text-sm text-muted-foreground select-none">
-          <Card className="w-96">
+          <Card className="w-[500px]">
             {submitted ? (
               <CardContent className="flex flex-col my-6 gap-4 mx-2 !pb-0 justify-center items-center">
                 <CheckCircledIcon height={40} width={40} />

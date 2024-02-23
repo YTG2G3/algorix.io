@@ -166,7 +166,7 @@ export default function ClientCareers({ submit }: { submit: (data) => void }) {
             ))}
           </div>
 
-          <div className="flex gap-4 w-full px-20 flex-wrap justify-center">
+          <div className="flex gap-4 w-full px-20 flex-wrap justify-center relative pb-16">
             {positions.map((position, i) =>
               position.skills.filter(
                 (v) => enabled[skills.findIndex((vv) => vv === v)]
@@ -189,7 +189,7 @@ export default function ClientCareers({ submit }: { submit: (data) => void }) {
                       ))}
                     </ul>
                   </CardContent>
-                  <CardFooter className="flex justify-end items-center">
+                  <CardFooter className="flex justify-end items-center absolute bottom-0 right-0">
                     <Dialog open={open[i]}>
                       <DialogTrigger asChild>
                         <Button
